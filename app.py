@@ -7,7 +7,6 @@ clf = pickle.load(open(filename, 'rb'))
 cv=pickle.load(open('tranform.pkl','rb'))
 app = Flask(__name__)
 
-
 @app.route('/')
 def home():
 	return render_template('home.html')
