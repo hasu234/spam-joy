@@ -2,6 +2,7 @@ from flask import Flask,render_template,url_for,request
 import pickle
 import joblib
 
+
 filename = 'pickle.pkl'
 clf = pickle.load(open(filename, 'rb'))
 cv=pickle.load(open('tranform.pkl','rb'))
